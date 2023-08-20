@@ -18,9 +18,12 @@ DJANGO_APPS = [
 
 TRHIRD_PARTY_APPS = [
     'debug_toolbar',
+    'rest_framework',
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'core'
+]
 
 INSTALLED_APPS = DJANGO_APPS + TRHIRD_PARTY_APPS + LOCAL_APPS
 SITE_ID = 1
