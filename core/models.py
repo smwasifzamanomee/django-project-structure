@@ -1,10 +1,10 @@
 from django.db import models    
 
-class Product(models.Model):
-    name = models.CharField(max_length=255)
-    price = models.FloatField()
-    stock = models.IntegerField()
-    image_url = models.CharField(max_length=2083)
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    number_of_pages = models.IntegerField()
+    quantity = models.IntegerField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     
     def __str__(self):
-        return self.name
+        return self.title
